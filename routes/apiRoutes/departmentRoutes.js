@@ -5,7 +5,7 @@ const inputCheck = require('../../utils/inputCheck.js');
 
 //Get all departments
 router.get('/department', (req, res) => {
-    const sql = `SELECT * FROM departments`;
+    const sql = `SELECT * FROM department`;
     const params = [];
     db.all(sql, params, (err, rows) => {
         if (err) {
